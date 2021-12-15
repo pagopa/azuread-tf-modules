@@ -13,7 +13,6 @@ resource "azuread_application" "this" {
   display_name            = var.name
   prevent_duplicate_names = true
   identifier_uris         = [format("api://%s", var.name)]
-  app_role                = []
   sign_in_audience        = "AzureADMyOrg"
 
   api {
