@@ -31,7 +31,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="application_name"></a> [application\_name](#) | (Required) App registration unique name. | `string` | n/a | yes |
 | <a name="secret_description"></a> [secret\_description](#) | (Required) Description of the app's secret. | `string` | n/a | yes |
-| <a name="accessible_subscriptions"></a> [accessible\_subscriptions](#) | (Required) The subscriptions ids that the application can read. | `list(string)` | n/a | yes |
+| <a name="subscription_id"></a> [subscription\_id](#) | (Required) Subscription of the `default-roleassignment-rg` resouce group. | `string` | n/a | yes |
 
 ## Outputs
 

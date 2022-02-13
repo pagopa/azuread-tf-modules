@@ -26,9 +26,7 @@ resource "azuread_service_principal" "this" {
 }
 
 resource "azurerm_role_assignment" "this" {
-  for_each = toset(var.accessible_subscriptions)
-
-  principal_id       = azuread_service_principal.this.id
-  role_definition_id = "Reader"
-  scope              = "/subscriptions/${each.value}"
+  principal_id         = azuread_service_principal.this.id
+  role_definition_name = "Reader"
+  scope                = "/subscriptions/${var.subscription_id}/resourceGroups/default-roleassignment-rg"
 }
