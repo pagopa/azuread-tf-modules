@@ -2,15 +2,15 @@
 
 | Name | Version |
 |------|---------|
-| <a name="azuread"></a> [azuread](#azuread) | ~>2.15.0 |
-| <a name="azurerm"></a> [azurerm](#azurerm) | =2.91.0 |
+| <a name="azuread"></a> [azuread](#azuread) | =2.10.0 |
+| <a name="azurerm"></a> [azurerm](#azurerm) | =2.90.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="azuread"></a> [azuread](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0) | ~>2.15.0 |
-| <a name="azurerm"></a> [azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/2.96.0) | =2.96.0 |
+| <a name="azuread"></a> [azuread](https://registry.terraform.io/providers/hashicorp/azuread/2.10.0) | =2.10.0 |
+| <a name="azurerm"></a> [azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0) | =2.90.0 |
 
 ## Modules
 

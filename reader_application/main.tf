@@ -1,12 +1,10 @@
 terraform {
   required_providers {
     azuread = {
-      source  = "hashicorp/azuread"
-      version = "~> 2.15.0"
+      source = "hashicorp/azuread"
     }
     azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "=2.96.0"
+      source = "hashicorp/azurerm"
     }
   }
 }
@@ -18,7 +16,7 @@ resource "azuread_application" "this" {
 
 resource "azuread_application_password" "this" {
   application_object_id = azuread_application.this.object_id
-  description           = var.secret_description
+  display_name          = var.secret_description
 }
 
 resource "azuread_service_principal" "this" {
