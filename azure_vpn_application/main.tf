@@ -14,7 +14,6 @@ resource "azuread_application" "this" {
   prevent_duplicate_names = true
   identifier_uris         = [format("api://%s", var.name)]
   sign_in_audience        = "AzureADMyOrg"
-  owners                  = var.owners
 
   api {
     oauth2_permission_scope {
@@ -70,7 +69,6 @@ resource "null_resource" "this" {
 resource "azuread_service_principal" "this" {
   application_id               = azuread_application.this.application_id
   app_role_assignment_required = true
-  owners                       = var.owners
 
   tags = ["HideApp", "WindowsAzureActiveDirectoryIntegratedApp"]
 }
