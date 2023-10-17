@@ -1,9 +1,18 @@
 repos:
-  - repo: git://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.50.0
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.83.2
     hooks:
       - id: terraform_fmt
       - id: terraform_docs
         args:
-          - tfvars hcl --output-file terraform.tfvars.model .
+          - --args=--hide providers
       - id: terraform_tfsec
+      - id: terraform_validate
+        exclude: |
+            (?x)^(
+                ^fixme*|
+                ^tests*
+            )$
+        args:
+          - --args=-json
+          - --args=-no-color

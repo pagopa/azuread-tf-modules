@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - master
     paths-ignore:
       - 'CODEOWNERS'
       - '**.md'
@@ -15,20 +14,23 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: checkout
+        # https://github.com/actions/checkout/releases/tag/v3.4.0
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f
         with:
           persist-credentials: false
           fetch-depth: 0
 
       - name: Release
-        uses: cycjimmy/semantic-release-action@v2
+        # https://github.com/cycjimmy/semantic-release-action/commits/v4.0.0
+        uses: cycjimmy/semantic-release-action@61680d0e9b02ff86f5648ade99e01be17f0260a4
         with:
-          semantic_version: 18.0.0
+          # https://github.com/semantic-release/release-notes-generator/commits/v12.0.0
+          # https://github.com/semantic-release/git/commits/v10.0.1
           extra_plugins: |
-            @semantic-release/release-notes-generator@10.0.3
-            @semantic-release/git@10.0.1
+            @semantic-release/release-notes-generator@2a2756e13da3f66c735ed87b65ea3dacd3b8e7b4
+            @semantic-release/git@3e934d45f97fd07a63617c0fc098c9ed3e67d97a
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
