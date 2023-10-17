@@ -14,7 +14,6 @@ resource "azuread_application" "this" {
   prevent_duplicate_names = true
   identifier_uris         = [format("api://%s", var.name)]
   sign_in_audience        = "AzureADMyOrg"
-  owners                  = var.owners
 
   api {
     oauth2_permission_scope {

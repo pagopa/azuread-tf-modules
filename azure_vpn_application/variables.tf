@@ -8,8 +8,3 @@ variable "azure_vpn_application_id" {
   description = "(Optional) Azure VPN client application id (static)"
   default     = "41b23e61-6c1e-4545-b367-cd054e0ed4b4"
 }
-
-variable "owners" {
-  type        = list(string)
-  description = "(Required) Application owners"
-}
