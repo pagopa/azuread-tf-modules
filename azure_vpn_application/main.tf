@@ -69,7 +69,6 @@ resource "null_resource" "this" {
 resource "azuread_service_principal" "this" {
   application_id               = azuread_application.this.application_id
   app_role_assignment_required = true
-  owners                       = var.owners
 
   tags = ["HideApp", "WindowsAzureActiveDirectoryIntegratedApp"]
 }
