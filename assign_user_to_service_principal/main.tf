@@ -8,9 +8,6 @@ terraform {
 }
 
 resource "null_resource" "this" {
-  # needs az cli > 2.0.81
-  # see https://github.com/Azure/azure-cli/issues/12152
-
   triggers = {
     service_principal_object_id = var.service_principal_object_id
     user_object_id              = var.user_object_id
