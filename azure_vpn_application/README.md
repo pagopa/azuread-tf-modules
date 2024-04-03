@@ -4,7 +4,10 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_null"></a> [null](#requirement\_null) | =3.2.1 |
+| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | <= 2.47.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | <= 3.2.2 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | <= 3.6.0 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | <= 0.11.1 |
 
 ## Modules
 
@@ -16,7 +19,7 @@ No modules.
 |------|------|
 | [azuread_application.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/application) | resource |
 | [azuread_service_principal.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/service_principal) | resource |
-| [null_resource.this](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource) | resource |
+| [null_resource.this](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [random_uuid.oauth2_permission_scope_id](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/uuid) | resource |
 | [time_sleep.wait](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/sleep) | resource |
 
