@@ -35,6 +35,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_azuread_application_application_id"></a> [azuread\_application\_application\_id](#output\_azuread\_application\_application\_id) | n/a |
+| <a name="output_azuread_application_client_id"></a> [azuread\_application\_client\_id](#output\_azuread\_application\_client\_id) | n/a |
 | <a name="output_azuread_application_id"></a> [azuread\_application\_id](#output\_azuread\_application\_id) | n/a |
 | <a name="output_azuread_application_object_id"></a> [azuread\_application\_object\_id](#output\_azuread\_application\_object\_id) | n/a |
 | <a name="output_azuread_service_principal_object_id"></a> [azuread\_service\_principal\_object\_id](#output\_azuread\_service\_principal\_object\_id) | n/a |
