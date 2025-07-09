@@ -4,7 +4,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_null"></a> [null](#requirement\_null) | <= 3.2.2 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.2.4, < 4.0.0 |
 
 ## Modules
 

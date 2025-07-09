@@ -4,10 +4,10 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | <= 2.47.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | <= 3.2.2 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | <= 3.6.0 |
-| <a name="requirement_time"></a> [time](#requirement\_time) | <= 0.11.1 |
+| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 3.4.0, < 4.0.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.2.4, < 4.0.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.0, < 4.0.0 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | >= 0.13.1, < 1.0.0 |
 
 ## Modules
 
@@ -35,6 +35,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_azuread_application_application_id"></a> [azuread\_application\_application\_id](#output\_azuread\_application\_application\_id) | n/a |
+| <a name="output_azuread_application_client_id"></a> [azuread\_application\_client\_id](#output\_azuread\_application\_client\_id) | n/a |
 | <a name="output_azuread_application_id"></a> [azuread\_application\_id](#output\_azuread\_application\_id) | n/a |
 | <a name="output_azuread_application_object_id"></a> [azuread\_application\_object\_id](#output\_azuread\_application\_object\_id) | n/a |
 | <a name="output_azuread_service_principal_object_id"></a> [azuread\_service\_principal\_object\_id](#output\_azuread\_service\_principal\_object\_id) | n/a |

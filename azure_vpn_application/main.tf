@@ -2,19 +2,19 @@ terraform {
   required_providers {
     azuread = {
       source  = "hashicorp/azuread"
-      version = "<= 2.47.0"
+      version = ">= 3.4.0, < 4.0.0"
     }
     null = {
       source  = "hashicorp/null"
-      version = "<= 3.2.2"
+      version = ">= 3.2.4, < 4.0.0"
     }
     time = {
       source  = "hashicorp/time"
-      version = "<= 0.11.1"
+      version = ">= 0.13.1, < 1.0.0"
     }
     random = {
       source  = "hashicorp/random"
-      version = "<= 3.6.0"
+      version = ">= 3.6.0, < 4.0.0"
     }
   }
 }
@@ -79,7 +79,7 @@ resource "null_resource" "this" {
 }
 
 resource "azuread_service_principal" "this" {
-  application_id               = azuread_application.this.application_id
+  client_id                    = azuread_application.this.client_id
   app_role_assignment_required = true
 
   tags = ["HideApp", "WindowsAzureActiveDirectoryIntegratedApp"]
