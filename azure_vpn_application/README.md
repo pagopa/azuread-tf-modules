@@ -4,10 +4,10 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | <= 2.47.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | <= 3.2.2 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | <= 3.6.0 |
-| <a name="requirement_time"></a> [time](#requirement\_time) | <= 0.11.1 |
+| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 3.4.0, < 4.0.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.2.4, < 4.0.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.0, < 4.0.0 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | >= 0.13.1, < 1.0.0 |
 
 ## Modules
 
