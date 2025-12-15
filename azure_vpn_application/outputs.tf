@@ -7,7 +7,7 @@ output "azuread_application_client_id" {
 }
 
 output "azuread_application_application_id" {
-  value = azuread_application.this.application_id
+  value = azuread_application.this.client_id
 }
 
 output "azuread_application_object_id" {
