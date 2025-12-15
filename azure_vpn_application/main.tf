@@ -17,7 +17,7 @@ resource "azuread_application" "this" {
   sign_in_audience        = "AzureADMyOrg"
 
   api {
-    known_client_applications = [var.azure_vpn_application_id]
+    known_client_applications = var.legacy ? [] : [var.azure_vpn_application_id]
 
     oauth2_permission_scope {
       admin_consent_description  = var.name
