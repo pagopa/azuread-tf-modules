@@ -62,10 +62,6 @@ resource "azuread_application_pre_authorized" "this" {
   permission_ids       = [azuread_application.this.oauth2_permission_scope_ids[var.name]]
 }
 
-moved {
-  from = null_resource.this
-  to   = null_resource.this[0]
-}
 
 moved {
   from = time_sleep.wait
@@ -77,6 +73,13 @@ resource "time_sleep" "wait" {
   create_duration = "60s"
 }
 
+moved {
+  from = null_resource.this
+  to   = null_resource.this[0]
+}
+
+# use azuread_service_principal.this to assign app roles later
+# this is only needed for legacy
 resource "null_resource" "this" {
   count = var.legacy ? 1 : 0
   # needs az cli > 2.0.81
