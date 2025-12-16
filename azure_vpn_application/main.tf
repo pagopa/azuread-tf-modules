@@ -57,9 +57,9 @@ resource "azuread_service_principal" "this" {
 
 resource "azuread_application_pre_authorized" "this" {
   count                = var.legacy ? 0 : 1
-  application_id       = azuread_application.this.object_id
+  application_id       = azuread_application.this.id
   authorized_client_id = var.azure_vpn_application_id
-  permission_ids       = [random_uuid.oauth2_permission_scope_id.result]
+  permission_ids       = [azuread_application.this.oauth2_permission_scope_ids[var.name]]
 }
 
 moved {
