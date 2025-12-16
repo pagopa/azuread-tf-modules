@@ -4,9 +4,11 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0 |
-| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | ~> 3.7 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.7 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6.0 |
+| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 3.4.0, < 4.0.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.2.4, < 4.0.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.0, < 4.0.0 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | >= 0.13.1, < 1.0.0 |
 
 ## Modules
 
